@@ -68,6 +68,10 @@ module Assembly
       Assembly::GradeSetResource.new(self)
     end
 
+    def groups
+      Assembly::GroupResource.new(self)
+    end
+
     def registration_groups
       Assembly::RegistrationGroupResource.new(self)
     end
